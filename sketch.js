@@ -17,7 +17,7 @@ function preload(){
   gameOverImage = loadImage("gameover.png")
 
   //carregue o som aqui
-  if(knife.isTouching (fruitGroup) && knife.isTouching (monsterGroup)) {
+  if(fruitGroup.isTouching (knife) && monsterGroup.isTouching (knife)) {
    gameOverSound.play();
    knifeSwooshSound.play();
   }
